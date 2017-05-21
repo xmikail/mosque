@@ -1,0 +1,20 @@
+{
+  "name": "mosque",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mikail Halikov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mosque"
+  ],
+  "homepage": "mhalikov.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

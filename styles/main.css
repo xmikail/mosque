@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%;}
+.col-8 { width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33%;}
+.col-11 { width: 91.66%;}
+.col-12 { width: 100%;}
+h1 {
+    font: 300 24px/36px 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font: 300 16px/24px 'Open Sans', sans-serif;
+    color: #252525;
+}
+.layout-positioner {
+    width: 90%;
+    margin: 0 auto;
+}
+header.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    background-color: #E5E4E1;
+    color: #252525;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+    float: left;
+    margin: 10px 0;
+}
+.logo h1 {
+    float: left;
+    display: inline-block;
+    line-height: 1;
+    margin: 25px 15px;
+    font-size: 24px;
+}
+.menu {
+    margin-top: 25px;
+    text-align: right;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    display: inline;
+    padding: 10px;
+    border-bottom: 1px solid #6F873B;
+    margin-right: 5px;
+    transition: border-bottom-color;
+    transition: 0.3s;
+}
+.menu li a {
+    color: #252525;
+}
+.menu li:hover {
+    border-bottom-color: #EFA716;
+}
+.menu li:last-child {
+    margin: 0;
+}
+.content {
+    margin-top: 110px;
+    padding: 0;
+}
+.content::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.hero {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #efa716;
+}
+.hero h2 {
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.hero img {
+    width: 100%;
+    overflow: hidden;
+}
+.hero .welcome {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mosque-manners, .team,
+.blog_posts {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #efa716;
+    
+}
+.no_padding-left {
+    padding-left: 0;
+}
+.visit_rules {
+    padding-left: 0;
+}
+.mosque-manners h3,
+.team h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.visit_rules__pics {
+    padding-right: 0;
+}
+.visit_rules__pics img {
+    width: 100%;
+    margin-top: -30px;
+}
+/* Blog posts */
+.blog_posts .col-4:first-child {
+    padding-left: 0;
+}
+.blog_posts .col-4:last-child {
+    padding-right: 0;
+}
+.blog_posts h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.blog_post_info li {
+    display: inline;
+    margin-right: 15px;
+}
+.blog_post_info a {
+    font-weight: ;
+    color: #6f873b;
+}
+.blog_post_info a:hover {
+    color: #efa716;
+}
+.blog_post_info a i {
+    padding-right: 5px;
+}
+.frame img {
+    width: 100%;
+}
+/* Имамы мечети*/
+
+.team .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.imam_card {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.imam_card:last-child {
+    padding-right: 0;
+}
+.imam_card img {
+    width: 50%;
+    float: left;
+}
+.imam_card .caption {
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.caption .heading {
+    border-bottom: 1px solid #efa716;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.caption span {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #505050;
+}
+.caption p {
+    font-size: 14px;
+    font-weight: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.about_mosque_imams p {
+    text-indent: 20px;
+}
+.about_mosque_imams p:first-child {
+    text-indent: 0;
+}
+/* contacts */
+.contacts {
+    height: 450px;
+}
+.contacts h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.mosque_map {
+    padding-left: 0;
+}
+.mosque_contacts {
+    padding-right: 0;
+}
+.divider {
+    padding: 10px;
+}
+.form_container {
+    padding-left: 0;
+}
+input, textarea {
+    border: none;
+    padding: 8px;
+    outline: none;
+    border-bottom: 1px solid #6F873B;
+    background-color: #eaeaea;
+    
+}
+input:focus, textarea:focus {
+    border-bottom: 1px solid #EFAE2D;
+}
+.visitor_name, .visitor_email, .visitor_textarea {
+    width: 100%;
+    padding-left: 0;
+    line-height: 1.2;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background-color: #6f873b;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #efae2d;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+}
+button .fa {
+    padding-right: 5px;
+}
+.clearfix {
+    display: table;
+    content: '';
+    clear: both;
+}
+footer.footer {
+    margin-top: 20px;
+    color: #252525;
+    background: #E5E4E1;
+}
+.copyright {
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: left;
+}
