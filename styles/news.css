@@ -1,0 +1,107 @@
+.page_title {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 15px 10px;
+    line-height: 1;
+   /* border-bottom: 1px solid #6f873b;*/
+}
+.inner {
+    width: 560px;
+    margin: 50px auto;
+}
+.inner::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.press_article {
+    margin-top: 40px;
+}
+.press_article-first {
+    position: relative;
+    border-top: 1px solid #6f873b;
+    border-bottom: 1px solid #6f873b;
+    padding: 25px 0;
+}
+.press_article-img {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 38px;
+}
+.press_article-img img {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+}
+.press_article-caption {
+    position: relative;
+    margin: 25px 0 0;
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 600;
+}
+.press_article-caption a {
+    text-decoration: none;
+}
+.press_article-first:hover .press_article-caption a {
+    color: #ef0032;
+}
+.press_article-text {
+    position: relative;
+    margin: 12px 0 0;
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.press_article-foot {
+    position: relative;
+    margin: 12px 0 15px;
+    color: #b4b4b4;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+}
+.press_article-foot span {
+    display: inline-block;
+    padding: 0 4px;
+}
+.press_article-item {
+    position: relative;
+    margin: 52px 0;
+    display: table;
+}
+.press_article-item-img {
+    position: relative;
+    display: table-cell;
+    width: 160px;
+    vertical-align: top;
+    padding-right: 20px;
+}
+.press_article-item-img img {
+    width: 100%;
+    height: auto;
+}
+.press_article-item-info {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px 0;
+}
+.press_article-item-info-caption {
+    display: block;
+    text-decoration: none;
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: -4px 0 12px;
+}
+.press_article-item:hover a,
+.press_article-item:focus a,
+.press_article-item:active a,
+.press_article-item:visited a {
+    color: #ef0032;
+    text-decoration: none;
+}
+.press_article-item-info .press_article-foot {
+    margin-bottom: 0;
+}

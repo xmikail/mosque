@@ -4,6 +4,16 @@
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font: 300 16px/24px 'Open Sans', sans-serif;
+    color: #252525;
+}
 .row::after {
     content: "";
     clear: both;
@@ -32,9 +42,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
-body {
-    font: 300 16px/24px 'Open Sans', sans-serif;
-    color: #252525;
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.empty {
+    height: 50px;
 }
 .layout-positioner {
     width: 90%;
@@ -52,6 +66,7 @@ header.header {
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 1000;
 }
 .logo img {
     height: 50px;
@@ -141,17 +156,22 @@ header.header {
     text-align: center;
 }
 .visit_rules__pics {
+    width: 400px;
+    height: 220px;
+    overflow: hidden;
+    vertical-align: middle;
+    float: right;
     padding-right: 0;
 }
 .visit_rules__pics img {
     width: 100%;
-    margin-top: -30px;
+    margin-top: -80px;
 }
 /* Blog posts */
-.blog_posts .col-4:first-child {
-    padding-left: 0;
+.blog_posts-item:first-child {
+    padding-left: -15px;
 }
-.blog_posts .col-4:last-child {
+.blog_posts-item:last-child {
     padding-right: 0;
 }
 .blog_posts h3 {
@@ -174,6 +194,9 @@ header.header {
 .blog_post_info a i {
     padding-right: 5px;
 }
+.frame:first-child {
+    padding-left: 0;
+}
 .frame img {
     width: 100%;
 }
@@ -184,18 +207,27 @@ header.header {
     padding-right: 0;
 }
 .imam_card {
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 0;
     padding-right: 20px;
+    overflow: hidden;
 }
 .imam_card:last-child {
     padding-right: 0;
 }
 .imam_card_thumb {
-    width: 50%;
+    display: table-cell;
+    width: 150px;
+    height: 180px;
+    position: relative;
+    vertical-align: top;
     float: left;
 }
 .imam_card_thumb img {
     width: 100%;
+    height: 100%;
 }
 .imam_card_caption {
     width: 50%;
@@ -285,7 +317,10 @@ button .fa {
     clear: both;
 }
 footer.footer {
-    margin-top: 20px;
+    height: 50px;
+    position: relative;
+    margin-top: -50px;
+    padding-left: 15px;
     color: #252525;
     background: #E5E4E1;
 }
